@@ -1,8 +1,8 @@
 <header class="main-header">
-  <nav class="navbar navbar-static-top">
+  <nav class="navbar navbar-static-top" style="background-color: gray">
     <div class="container">
       <div class="navbar-header">
-        <a href="https://www.youtube.com/channel/UCsFgC9ggwrmYR2XqEHXpbNg" class="navbar-brand"><b>Ser</b>Bermz</a>
+        <a href="#" class="navbar-brand">GrayOff</a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
@@ -15,7 +15,7 @@
           <li><a href="">ABOUT US</a></li>
           <li><a href="">CONTACT US</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">CATEGORY <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">BUY NOW <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <?php
              
