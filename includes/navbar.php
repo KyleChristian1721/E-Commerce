@@ -2,7 +2,7 @@
   <nav class="navbar navbar-static-top" style="background-color: gray">
     <div class="container">
       <div class="navbar-header">
-        <a href="#" class="navbar-brand">GrayOff</a>
+        <a href="https://www.grayoff-asia.com/ph/" class="navbar-brand">GrayOff</a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
         </button>
