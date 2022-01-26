@@ -42,7 +42,7 @@
 			$stmt->execute(['email'=>$email]);
 			$row = $stmt->fetch();
 			if($row['numrows'] > 0){
-				$_SESSION['error'] = 'Email already taken';
+				$_SESSION['error'] = 'Email already taken!';
 				header('location: signup.php');
 			}
 			else{
@@ -59,12 +59,17 @@
 					$userid = $conn->lastInsertId();
 
 					$message = "
-						<h2>Thank you for Registering.</h2>
-						<p>Your Account:</p>
-						<p>Email: ".$email."</p>
-						<p>Password: ".$_POST['password']."</p>
-						<p>Please click the link below to activate your account.</p>
-						<a href='http://localhost/E-Commerce/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
+						<center>
+							<h2>Welcome!</h2>
+							<p>	Thanks for signing up! We just need <br>
+								you to verify your email address <br>
+								o complete setting up your account.
+							</p>
+							<br>
+							<button>
+								<a href='http://localhost/E-Commerce/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
+							</button>
+						</center>
 					";
 
 					//Load phpmailer
@@ -96,7 +101,7 @@
 				       
 				        //Content
 				        $mail->isHTML(true);                                  
-				        $mail->Subject = 'ECommerce Site Sign Up';
+				        $mail->Subject = 'Verify Account';
 				        $mail->Body    = $message;
 
 				        $mail->send();
@@ -105,9 +110,8 @@
 				        unset($_SESSION['lastname']);
 				        unset($_SESSION['email']);
 
-				        $_SESSION['success'] = 'Account created. Check your email to activate.';
+				        $_SESSION['success'] = 'Account Created! Please check your email to activate.';
 				        header('location: signup.php');
-
 				    } 
 				    catch (Exception $e) {
 				        $_SESSION['error'] = 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo;
