@@ -1,10 +1,10 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href="#" class="logo">
+  <a href= "https://www.facebook.com/Grayoff-112117010576406/" target ="_blank" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini"><b>S</b>CS</span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>Ser</b>Bermz</span>
+    <span class="logo-lg">GrayOff</span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">
@@ -28,7 +28,7 @@
 
               <p>
                 <?php echo $admin['firstname'].' '.$admin['lastname']; ?>
-                <small>Member since <?php echo date('M. Y', strtotime($admin['created_on'])); ?></small>
+                
               </p>
             </li>
             <li class="user-footer">

@@ -3,13 +3,13 @@
 <head>
   	<meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<title>Ecommerce Site using PHP</title>
+  	<title>GrayOff</title>
   	<!-- Tell the browser to be responsive to screen width -->
   	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   	<!-- Bootstrap 3.3.7 -->
   	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
   	<!-- Font Awesome -->
-  	<link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <!-- Select2 -->
     <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
   	<!-- Theme style -->
@@ -32,10 +32,16 @@
   	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   	<![endif]-->
 
-  	<!-- Google Font -->
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  	<!-- Font -->
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
 
   	<style type="text/css">
+      *{
+      font-family: 'Poppins', sans-serif;
+      }
+
   		.mt20{
   			margin-top:20px;
   		}

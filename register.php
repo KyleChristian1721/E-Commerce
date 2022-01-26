@@ -15,20 +15,17 @@
 		$_SESSION['lastname'] = $lastname;
 		$_SESSION['email'] = $email;
 
-		if(!isset($_SESSION['captcha'])){
+		if(isset($_POST['g-recaptcha-response'])){
 			require('recaptcha/src/autoload.php');		
-			$recaptcha = new \ReCaptcha\ReCaptcha('6Ld1qTceAAAAANxyA0TuxOSLP5tdiTEBWORNKA7Z', new \ReCaptcha\RequestMethod\SocketPost());
+			$recaptcha = new \ReCaptcha\ReCaptcha('6LeeijMeAAAAADE_XNQVgVn_jQXzzwDUUxFu0YMw');
 			$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-			if(!$resp->isSuccess()){
-				header('location: signup.php');	
-				
-			}	
+			if (!$resp->isSuccess()) {
+				$_SESSION['error'] = 'Please answer recaptcha correctly';
+		  		header('location: signup.php');	
+		  		exit();			
+		  }	
 			
-			else{
-				$_SESSION['captcha'] = time() + (10*60);
-			}
-
 		}
 
 		if($password != $repassword){

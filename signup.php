@@ -58,15 +58,14 @@
             <input type="password" class="form-control" name="repassword" placeholder="Retype password" required>
             <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
           </div>
-          <?php
-            if(!isset($_SESSION['captcha'])){
-              echo '
-                <di class="form-group" style="width:100%;">
-                  <div class="g-recaptcha" data-sitekey="6Ld1qTceAAAAAPPxYuv1zObROhlDDsGFDppxfAIB"></div>
-                </di>
-              ';
-            }
-          ?>
+          
+            
+              
+                <div class="form-group" style="width:100%;">
+                <div class="g-recaptcha" data-sitekey="<?php echo "6LeeijMeAAAAAOVTLnc6THw2Sqp58d5O2cq6T2Uk"; ?>"></div>
+                </div>
+          
+         
           <hr>
       		<div class="row">
     			<div class="col-xs-4">
