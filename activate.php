@@ -34,7 +34,7 @@
 					$output .= '
 						<div class="alert alert-success">
 			                <h4><i class="icon fa fa-check"></i> Success!</h4>
-			                Account activated - Email: <b>'.$row['email'].'</b>.
+			                Account Activated!
 			            </div>
 			            <h4>You may <a href="login.php">Login</a> or back to <a href="index.php">Homepage</a>.</h4>
 					';
