@@ -15,7 +15,7 @@
 	        		<h1 class="page-header">YOUR CART</h1>
 	        		<div class="box box-solid">
 	        			<div class="box-body">
-		        		<table class="table table-bordered">
+		        		<table class="table table-bordered" id="cart-table">
 		        			<thead>
 		        				<th></th>
 		        				<th>Photo</th>
@@ -195,5 +195,11 @@ paypal.Button.render({
 
 }, '#paypal-button');
 </script>
+<style>
+	#cart-table td,
+	#cart-table th{
+		text-align: center;
+	}
+</style>
 </body>
 </html>

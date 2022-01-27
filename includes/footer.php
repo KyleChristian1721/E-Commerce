@@ -6,7 +6,7 @@
         <a href="#"><i class="fab fa-twitter-square"></i></a>
       </div>
       <div class="footer-credit">
-        <strong>&copy; 2022 <a href="#" style="color: gray">GrayOff</a></strong>
+        <strong>&copy; 2022 <a href="index.php" style="color: gray">GrayOff</a></strong>
       </div>
     </div>
 </footer>

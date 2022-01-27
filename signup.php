@@ -68,7 +68,7 @@
          
           <hr>
       		<div class="row">
-    			<div class="col-xs-4">
+    			<div class="col-xs-5">
           			<button type="submit" class="btn btn-primary btn-block btn-flat" name="signup"><i class="fa fa-pencil"></i> Sign Up</button>
         		</div>
       		</div>
