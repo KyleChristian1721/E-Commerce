@@ -21,7 +21,7 @@
 			$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
 			if (!$resp->isSuccess()) {
-				$_SESSION['error'] = 'Please answer recaptcha correctly';
+				$_SESSION['error'] = 'Please answer recaptcha before proceeding';
 		  		header('location: signup.php');	
 		  		exit();			
 		  }	
