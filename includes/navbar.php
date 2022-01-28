@@ -109,4 +109,9 @@
       </div>
     </div>
   </nav>
+  <style>
+    .skin-blue .main-header li.user-header{
+    background-color: darkgray;
+    }
+  </style>
 </header>

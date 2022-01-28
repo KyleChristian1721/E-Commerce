@@ -1,12 +1,7 @@
 <footer class="main-footer">
     <div class="container">
-      <div class="pull-right hidden-xs">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-	    	<a href="#"><i class="fab fa-instagram-square"></i></a>
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-      </div>
       <div class="footer-credit">
-        <strong>&copy; 2022 <a href="#" style="color: gray">GrayOff</a></strong>
+        <strong>&copy; 2022 <a href="home.php" style="color: gray">GrayOff</a></strong>
       </div>
     </div>
 </footer>

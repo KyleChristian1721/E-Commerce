@@ -14,7 +14,7 @@
         Category
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-columns"></i> Home</a></li>
         <li>Products</li>
         <li class="active">Category</li>
       </ol>
@@ -129,5 +129,13 @@ function getRow(id){
   });
 }
 </script>
+<style>
+  h1{
+    font-family: Poppins, sans-serif;
+  }
+  td, th{
+		text-align: center;
+	}
+</style>
 </body>
 </html>

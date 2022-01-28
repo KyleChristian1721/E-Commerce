@@ -21,6 +21,11 @@
 									unset($_SESSION['error']);
 								}
 							?>
+                            <div class="card">
+								<div class="card-body">
+                                    <img src="images/grayoff-photo.jpg" alt="Contact-Photo">
+                                </div>
+                            </div>
 							<div class="card">
 								<div class="card-body">
                                     <div class="card-content">								
@@ -71,18 +76,24 @@
 	</div>
 
 	<style>
+        .card-body img{
+			width: 100%;
+    		height: 100%;
+    		object-fit: cover;
+    		overflow: hidden;
+		}
 		.card-body{
-            background-color: lightgray;
+            background-color: #E7E6E6;
             color: #2F5B80;
+            font-size: 1.2rem;
         }
         .card-content{
             padding: 15px 20px;
         }
         .faq__title h4{
-            color: white;
+            color: #2F5B80;
             font-weight: bold;
             letter-spacing: 1px;
-            text-shadow: -1px 0 #2F5B80, 0 1px #2F5B80, 1px 0 #2F5B80, 0 -1px #2F5B80;
             font-family: Poppins, sans-serif;
             padding: 3px 0px;
         }

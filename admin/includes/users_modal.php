@@ -75,7 +75,7 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"><b>Edit User</b></h4>
+              <h4 class="modal-title"><b>User Details</b></h4>
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="users_edit.php">
@@ -84,48 +84,48 @@
                     <label for="edit_email" class="col-sm-3 control-label">Email</label>
 
                     <div class="col-sm-9">
-                      <input type="email" class="form-control" id="edit_email" name="email">
+                      <input type="email" class="form-control" id="edit_email" name="email" readonly>
                     </div>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="edit_password" class="col-sm-3 control-label">Password</label>
 
                     <div class="col-sm-9">
                       <input type="password" class="form-control" id="edit_password" name="password">
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group">
                     <label for="edit_firstname" class="col-sm-3 control-label">Firstname</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_firstname" name="firstname">
+                      <input type="text" class="form-control" id="edit_firstname" name="firstname" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="edit_lastname" class="col-sm-3 control-label">Lastname</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_lastname" name="lastname">
+                      <input type="text" class="form-control" id="edit_lastname" name="lastname" readonly>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="edit_address" class="col-sm-3 control-label">Address</label>
 
                     <div class="col-sm-9">
-                      <textarea class="form-control" id="edit_address" name="address"></textarea>
+                      <textarea class="form-control" id="edit_address" name="address" readonly></textarea>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="edit_contact" class="col-sm-3 control-label">Contact Info</label>
 
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" id="edit_contact" name="contact">
+                      <input type="text" class="form-control" id="edit_contact" name="contact" readonly>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
-              <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Update</button>
+              <button type="button" class="btn btn-default btn-flat pull-right" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+              <!-- <button type="submit" class="btn btn-success btn-flat" name="edit"><i class="fa fa-check-square-o"></i> Update</button> -->
               </form>
             </div>
         </div>
@@ -212,7 +212,10 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
 
-
-     
+<style>
+  .form-control[readonly]{
+    background-color: white;
+  }
+</style>     

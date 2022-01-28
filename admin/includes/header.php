@@ -10,9 +10,10 @@
   	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
   	<!-- Font Awesome -->
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
     <!-- Select2 -->
     <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
-  	<!-- Theme style -->
+  	<!-- Theme Style -->
   	<link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
   	<!-- DataTables -->
     <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
@@ -22,8 +23,7 @@
     <link rel="stylesheet" href="../plugins/timepicker/bootstrap-timepicker.min.css">
     <!-- bootstrap datepicker -->
     <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
+    <!-- AdminLTE Skins -->
     <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
   	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
