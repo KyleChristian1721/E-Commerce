@@ -14,7 +14,7 @@
         Sales History
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-columns"></i> Home</a></li>
         <li class="active">Sales</li>
       </ol>
     </section>
@@ -33,7 +33,7 @@
                     </div>
                     <input type="text" class="form-control pull-right col-sm-8" id="reservation" name="date_range">
                   </div>
-                  <button type="submit" class="btn btn-success btn-sm btn-flat" name="print"><span class="glyphicon glyphicon-print"></span> Print</button>
+                  <!-- <button type="submit" class="btn btn-success btn-sm btn-flat" name="print"><span class="glyphicon glyphicon-print"></span> Print</button> -->
                 </form>
               </div>
             </div>
@@ -164,5 +164,13 @@ $(function(){
   });
 });
 </script>
+<style>
+  h1{
+    font-family: Poppins, sans-serif;
+  }
+  td, th{
+		text-align: center;
+	}
+</style>
 </body>
 </html>

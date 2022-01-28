@@ -2,7 +2,6 @@
 <?php include 'includes/header.php'; ?>
 <body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
-
 	<?php include 'includes/navbar.php'; ?>
 	 
 	  <div class="content-wrapper">
@@ -15,7 +14,7 @@
 	        		<h1 class="page-header">YOUR CART</h1>
 	        		<div class="box box-solid">
 	        			<div class="box-body">
-		        		<table class="table table-bordered">
+		        		<table class="table table-bordered" id="cart-table">
 		        			<thead>
 		        				<th></th>
 		        				<th>Photo</th>
@@ -195,5 +194,16 @@ paypal.Button.render({
 
 }, '#paypal-button');
 </script>
+<style>
+	#cart-table td,
+	#cart-table th{
+		text-align: center;
+	}
+	.col-sm-9 h1.page-header{
+		font-family: Poppins, sans-serif;
+		margin: 0;
+		padding: 0 0 10px 0; 
+	}	
+</style>
 </body>
 </html>

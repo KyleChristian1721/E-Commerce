@@ -1,17 +1,17 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href= "https://www.facebook.com/Grayoff-112117010576406/" target ="_blank" class="logo">
+  <a href="https://www.facebook.com/Grayoff-112117010576406/" target ="_blank" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>S</b>CS</span>
+    <span class="logo-mini"><b>G</b></span>
     <!-- logo for regular state and mobile devices -->
     <span class="logo-lg">GrayOff</span>
   </a>
   <!-- Header Navbar: style can be found in header.less -->
-  <nav class="navbar navbar-static-top">
+  <nav class="navbar navbar-static-top" style="background-color: gray">
     <!-- Sidebar toggle button-->
-    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+    <!-- <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
       <span class="sr-only">Toggle navigation</span>
-    </a>
+    </a> -->
 
     <div class="navbar-custom-menu">
       <ul class="nav navbar-nav">
@@ -44,5 +44,13 @@
       </ul>
     </div>
   </nav>
+  <style>
+    .skin-blue .main-header .logo{
+      background-color: gray;
+    }
+    .skin-blue .main-header .logo:hover{
+      background-color: gray;
+    }
+  </style>
 </header>
 <?php include 'includes/profile_modal.php'; ?>

@@ -14,7 +14,7 @@
         Users
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-columns"></i> Home</a></li>
         <li class="active">Users</li>
       </ol>
     </section>
@@ -46,9 +46,9 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="box">
-            <div class="box-header with-border">
+            <!-- <div class="box-header with-border">
               <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
-            </div>
+            </div> -->
             <div class="box-body">
               <table id="example1" class="table table-bordered">
                 <thead>
@@ -85,7 +85,7 @@
                             <td>".date('M d, Y', strtotime($row['created_on']))."</td>
                             <td>
                               <a href='cart.php?user=".$row['id']."' class='btn btn-info btn-sm btn-flat'><i class='fa fa-search'></i> Cart</a>
-                              <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> Edit</button>
+                              <button class='btn btn-primary btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-eye'></i> View</button>
                               <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'><i class='fa fa-trash'></i> Delete</button>
                             </td>
                           </tr>
@@ -164,5 +164,13 @@ function getRow(id){
   });
 }
 </script>
+<style>
+  h1{
+    font-family: Poppins, sans-serif;
+  }
+  td, th{
+		text-align: center;
+	}
+</style>
 </body>
 </html>

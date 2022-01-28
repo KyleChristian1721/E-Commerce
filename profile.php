@@ -67,7 +67,7 @@
 	        		</div>
 	        		<div class="box box-solid">
 	        			<div class="box-header with-border">
-	        				<h4 class="box-title"><i class="fa fa-calendar"></i> <b>Transaction History</b></h4>
+	        				<h4 class="box-title"><i class="fa fa-calendar"></i> Transaction History</h4>
 	        			</div>
 	        			<div class="box-body">
 	        				<table class="table table-bordered" id="example1">
@@ -155,5 +155,10 @@ $(function(){
 	});
 });
 </script>
+<style>
+	.row h4{
+		font-family: Poppins, sans-serif;
+	}
+</style>
 </body>
 </html>

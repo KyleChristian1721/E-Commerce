@@ -29,13 +29,13 @@
 								</ol>
 								<div class="carousel-inner">
 								<div class="item active">
-									<img src="images/banner1.png" alt="First slide">
+									<img src="images/banner1.jpg" alt="First slide">
 								</div>
 								<div class="item">
-									<img src="images/banner2.png" alt="Second slide">
+									<img src="images/banner2.jpg" alt="Second slide">
 								</div>
 								<div class="item">
-									<img src="images/banner3.png" alt="Third slide">
+									<img src="images/banner3.jpg" alt="Third slide">
 								</div>
 								</div>
 								<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -44,13 +44,7 @@
 								<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
 								<span class="fa fa-angle-right"></span>
 								</a>
-							</div>
-							<br>
-							<div class="card">
-								<div class="card-body" id="home-page">
-									<img src="images/banner1.png" alt="Home-Photo">
-								</div>
-							</div>			
+							</div>		
 						</div>
 						<div class="col-sm-3">
 							<?php include 'includes/sidebar.php'; ?>
@@ -63,16 +57,6 @@
 	
 		<?php include 'includes/footer.php'; ?>	
 	</div>
-
-	<style>
-		.card-body img{
-			width: 100%;
-    		height: 100%;
-    		object-fit: cover;
-    		overflow: hidden;
-		}
-	</style>
-
 	<?php include 'includes/scripts.php'; ?>
 </body>
 </html>
