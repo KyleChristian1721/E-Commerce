@@ -64,7 +64,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header with-border">
-              <a href="#addnew" data-toggle="modal" id="add" data-id="<?php echo $user['id']; ?>" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
+              <!-- <a href="#addnew" data-toggle="modal" id="add" data-id="<?php echo $user['id']; ?>" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a> -->
               <a href="users.php" class="btn btn-sm btn-primary btn-flat"><i class="fa fa-arrow-left"></i> Users</a>
             </div>
             <div class="box-body">
@@ -72,7 +72,7 @@
                 <thead>
                   <th>Product Name</th>
                   <th>Quantity</th>
-                  <th>Tools</th>
+                  <!-- <th>Tools</th> -->
                 </thead>
                 <tbody>
                   <?php
@@ -86,10 +86,10 @@
                           <tr>
                             <td>".$row['name']."</td>
                             <td>".$row['quantity']."</td>
-                            <td>
+                            <!-- <td>
                               <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['cartid']."'><i class='fa fa-edit'></i> Edit Quantity</button>
                               <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['cartid']."'><i class='fa fa-trash'></i> Delete</button>
-                            </td>
+                            </td> -->
                           </tr>
                         ";
                       }
@@ -171,5 +171,10 @@ function getRow(id){
   });
 }
 </script>
+<style>
+	td, th{
+		text-align: center;
+	}
+</style>
 </body>
 </html>

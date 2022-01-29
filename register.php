@@ -7,12 +7,16 @@
 	if(isset($_POST['signup'])){
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
+		$contact = $_POST['contact'];
+		$address = $_POST['address'];
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 		$repassword = $_POST['repassword'];
 
 		$_SESSION['firstname'] = $firstname;
 		$_SESSION['lastname'] = $lastname;
+		$_SESSION['contact'] = $contact;
+		$_SESSION['address'] = $address;
 		$_SESSION['email'] = $email;
 
 		if(isset($_POST['g-recaptcha-response'])){
@@ -51,8 +55,8 @@
 				$code=substr(str_shuffle($set), 0, 12);
 
 				try{
-					$stmt = $conn->prepare("INSERT INTO users (email, password, firstname, lastname, activate_code, created_on) VALUES (:email, :password, :firstname, :lastname, :code, :now)");
-					$stmt->execute(['email'=>$email, 'password'=>$password, 'firstname'=>$firstname, 'lastname'=>$lastname, 'code'=>$code, 'now'=>$now]);
+					$stmt = $conn->prepare("INSERT INTO users (email, password, firstname, lastname, contact_info, address, activate_code, created_on) VALUES (:email, :password, :firstname, :lastname, :contact, :address, :code, :now)");
+					$stmt->execute(['email'=>$email, 'password'=>$password, 'firstname'=>$firstname, 'lastname'=>$lastname, 'contact'=>$contact, 'address'=>$address, 'code'=>$code, 'now'=>$now]);
 					$userid = $conn->lastInsertId();
 
 					$message = "
@@ -63,9 +67,7 @@
 								o complete setting up your account.
 							</p>
 							<br>
-							<button>
-								<a href='http://localhost/E-Commerce/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
-							</button>
+							<a href='http://localhost/E-Commerce/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
 						</center>
 					";
 
@@ -105,6 +107,8 @@
 
 				        unset($_SESSION['firstname']);
 				        unset($_SESSION['lastname']);
+						unset($_SESSION['contact']);
+						unset($_SESSION['address']);
 				        unset($_SESSION['email']);
 
 				        $_SESSION['success'] = 'Account Created! Please check your email to activate.';

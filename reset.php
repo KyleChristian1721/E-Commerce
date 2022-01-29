@@ -22,11 +22,13 @@
 				$stmt->execute(['code'=>$code, 'id'=>$row['id']]);
 				
 				$message = "
+				<center>
 					<h2>Password Reset</h2>
-					<p>Your Account:</p>
-					<p>Email: ".$email."</p>
-					<p>Please click the link below to reset your password.</p>
+					<p>	Please click the link below to <br>
+						reset your password.</p>
+					<br>
 					<a href='http://localhost/E-Commerce/password_reset.php?code=".$code."&user=".$row['id']."'>Reset Password</a>
+				</center>
 				";
 
 				//Load phpmailer
@@ -58,7 +60,7 @@
 			       
 			        //Content
 			        $mail->isHTML(true);                                  
-			        $mail->Subject = 'ECommerce Site Password Reset';
+			        $mail->Subject = 'Password Reset';
 			        $mail->Body    = $message;
 
 			        $mail->send();

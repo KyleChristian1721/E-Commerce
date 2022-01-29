@@ -82,5 +82,12 @@
 </div>
 
 <?php include 'includes/scripts.php'; ?>
+<style>
+	.col-sm-9 h1.page-header{
+		font-family: Poppins, sans-serif;
+		margin: 0;
+		padding: 0 0 10px 0; 
+	}	
+</style>
 </body>
 </html>
