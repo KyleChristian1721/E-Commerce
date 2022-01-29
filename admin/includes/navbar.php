@@ -1,6 +1,6 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href="https://www.facebook.com/Grayoff-112117010576406/" target ="_blank" class="logo">
+  <a href="https://www.grayoff-asia.com/ph/" target ="_blank" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <span class="logo-mini"><b>G</b></span>
     <!-- logo for regular state and mobile devices -->
