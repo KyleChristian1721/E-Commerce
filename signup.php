@@ -46,6 +46,14 @@
             <input type="text" class="form-control" name="lastname" placeholder="Lastname" value="<?php echo (isset($_SESSION['lastname'])) ? $_SESSION['lastname'] : '' ?>"  required>
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" name="contact" placeholder="Contact Number" value="<?php echo (isset($_SESSION['contact'])) ? $_SESSION['contact'] : '' ?>"  required>
+            <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" name="address" placeholder="Address" value="<?php echo (isset($_SESSION['address'])) ? $_SESSION['address'] : '' ?>"  required>
+            <span class="glyphicon glyphicon-home form-control-feedback"></span>
+          </div>
       		<div class="form-group has-feedback">
         		<input type="email" class="form-control" name="email" placeholder="Email" value="<?php echo (isset($_SESSION['email'])) ? $_SESSION['email'] : '' ?>" required>
         		<span class="glyphicon glyphicon-envelope form-control-feedback"></span>

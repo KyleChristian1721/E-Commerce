@@ -112,3 +112,9 @@
         </div>
     </div>
 </div>
+
+<style>
+	td, th{
+		text-align: center;
+	}
+</style>

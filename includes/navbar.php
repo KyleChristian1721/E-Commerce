@@ -15,7 +15,7 @@
           <li><a href="index_about.php">ABOUT US</a></li>
           <li><a href="index_contact.php">CONTACT US</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">BUY NOW <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ORDER NOW <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <?php
              

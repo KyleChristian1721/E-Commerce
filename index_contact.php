@@ -23,7 +23,7 @@
 							?>
                             <div class="card">
 								<div class="card-body">
-                                    <img src="images/grayoff-photo.jpg" alt="Contact-Photo">
+                                    <img src="images/grayoff-photo.jpg" alt="GrayOff-Photo">
                                 </div>
                             </div>
 							<div class="card">

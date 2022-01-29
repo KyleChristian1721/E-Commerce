@@ -51,6 +51,9 @@
     .skin-blue .main-header .logo:hover{
       background-color: gray;
     }
+    .skin-blue .main-header li.user-header{
+    background-color: darkgray;
+    }
   </style>
 </header>
 <?php include 'includes/profile_modal.php'; ?>
