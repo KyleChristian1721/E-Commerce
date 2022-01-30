@@ -20,7 +20,7 @@
                     <label for="password" class="col-sm-3 control-label">Password</label>
 
                     <div class="col-sm-9"> 
-                      <input type="password" class="form-control" id="password" name="password" value="<?php echo $admin['password']; ?>" readonly>
+                      <input type="password" class="form-control" id="password" name="password" value="<?php echo $admin['password']; ?>">
                     </div>
                 </div>
                 <div class="form-group">
@@ -61,3 +61,9 @@
         </div>
     </div>
 </div>
+
+<style>
+  .form-control[readonly]{
+    background-color: white;
+  }
+</style>
